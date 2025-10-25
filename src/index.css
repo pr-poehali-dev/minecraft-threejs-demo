@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 135 40% 50%;
+    --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -97,5 +99,12 @@
 
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  canvas {
+    display: block;
   }
 }
